@@ -5,7 +5,7 @@ module.exports = function (io, app) {
     setInterval(() => io.emit("ping", new Date().toTimeString()), 30000);
 
     // handle the event sent with socket.emit()
-    socket.on("salutations", (elem1, elem2, elem3) => {
+    socket.on("command", (elem1, elem2, elem3) => {
       console.log(elem1, elem2, elem3);
     });
   });
