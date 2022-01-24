@@ -9,6 +9,9 @@ app.set('io', io);
 
 require('./io')(io, app);
 
+const editorCommands = require('./routes/editor/commands');
+app.use(editorCommands);
+
 // simple route
 app.get('/', (_req, res) => {
   res.send('Hello World!')
