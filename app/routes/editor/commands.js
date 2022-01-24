@@ -10,6 +10,9 @@ router.get('/editor/commands/addNode', (req, res) => {
     //const socketInstance = io.to(thisSocketId);
     //socketInstance.emit('produtoSyncProgress', 0);
     io.emit('command','addNode')
+    res.status(200).send({
+        status: 1,
+    });
 });
 
 module.exports = router;
