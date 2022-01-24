@@ -8,7 +8,7 @@ router.get('/editor/commands/addNode', upload.none(), (req, res) => {
     console.log('received data');
     const formData = req.body;
     
-    console.log('form data', formData);
+    console.log('form data '+formData);
     const io = req.app.get('io');
     //const sockets = req.app.get('sockets');
     //const thisSocketId = sockets[req.UsuarioId];
