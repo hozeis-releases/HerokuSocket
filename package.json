@@ -1,0 +1,22 @@
+{
+  "name": "herokusocket",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hozeis/HerokuSocket.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hozeis/HerokuSocket/issues"
+  },
+  "homepage": "https://github.com/hozeis/HerokuSocket#readme",
+  "dependencies": {
+    "socket.io": "^4.4.1"
+  }
+}
