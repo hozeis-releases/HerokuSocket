@@ -4,7 +4,7 @@ const upload = multer();
 
 const router = new (express).Router();
 
-router.get('/editor/commands/addNode', upload.none(), (req, res) => {
+router.post('/editor/commands/addNode', upload.none(), (req, res) => {
     console.log('received data');
     const formData = req.body;
     
