@@ -1,12 +1,10 @@
 const express = require("express");
-const multer = require('multer');
-const upload = multer();
 
 const router = new (express).Router();
 
-router.post('/editor/commands/addNode', upload.none(), (req, res) => {
+router.get('/editor/commands/addNode', (req, res) => {
     console.log('received data');
-    const formData = req.body;
+    const formData = req.query;
     
     console.log('form data '+formData);
     const io = req.app.get('io');
